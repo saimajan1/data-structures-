@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+void decToOct(int n)
+{
+    if(n > 0){
+
+        decToOct(n/8);
+        
+        //print remainder
+        printf("%d",n%8);
+    }
+}
+ 
+int main()
+{
+    int num;
+ 
+    printf("Enter a Decimal number: \n");
+    scanf("%d",&num);
+ 
+    printf("Octal: ");
+    decToOct(num);
+ 
+    return 0;
+}
