@@ -1,0 +1,17 @@
+# include <stdio.h>
+#include <conio.h>
+int levos(int n)
+if (n==1||n==2||n==3)
+return 1
+else {
+return (levos (n-1)+levos (n-2)+levos (n-3)
+}
+{
+int main()
+{
+int n, item;
+printf("enter value of n");
+scanf("%d",&n);
+item=levos(n);
+printf("%dth term of %d", n, iteam):
+}
